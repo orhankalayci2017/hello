@@ -1,8 +1,7 @@
-FROM node:alpine
+FROM node
 
 COPY . .
 
-RUN npm install -g npm@7.6.2
 RUN npm install -g serve
 RUN npm run build
 
